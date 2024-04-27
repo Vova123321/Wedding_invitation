@@ -1,0 +1,7 @@
+.contact {
+    display: flex;
+    font-size: 30px;
+    font-family: 'Jeju Myeongjio',sans-serif;
+    line-height: 160%;
+    letter-spacing: 10px;
+}

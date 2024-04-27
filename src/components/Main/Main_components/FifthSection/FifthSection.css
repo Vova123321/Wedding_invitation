@@ -1,0 +1,29 @@
+.FifthSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    width: 100%;
+}
+
+.title_specific {
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Miama Nueva';
+    padding-top: 50px;
+    padding-bottom: 50px;
+    letter-spacing: 10px;
+    line-height: 80px;
+}
+
+.title_specific_p {
+    transform: translateX(-400%);
+    opacity: 0;
+    transition: opacity 2s ease, transform 2s ease ;
+}
+
+.title_specific_p.show {
+    opacity: 1;
+    transform: translateX(0);
+}

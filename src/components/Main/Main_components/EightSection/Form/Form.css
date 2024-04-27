@@ -1,0 +1,237 @@
+.question_form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: linear-gradient(to bottom,rgba(224, 193, 255, 0.6),rgba(209, 193, 255, 0.6));
+    padding: 30px 40px;
+    border-radius: 25px;
+    margin: 20px 0;
+    box-shadow: 2px 4px 0px 0px rgba(0, 0, 0, 0.25);
+}
+
+.logo_form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo_form > img {
+    object-fit: cover;
+    width: 111px;
+    height: auto;
+}
+
+.question_form > label {
+    font-size: 17px;
+    padding: 20px 0;
+}
+
+.question_form > input[type='text'] {
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid black;
+    height: 40px;
+    padding: 5px;
+    font-size: 17px;
+    border-radius: 5px;
+}
+
+.presente_item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    margin-left: 10px;
+}
+
+.hot_item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    margin-left: 10px;
+}
+
+.trans_item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    margin-left: 10px;
+}
+
+.presente_item:not(:last-child) {
+    padding-bottom: 10px;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+/* Стили для меток, которые будут отображаться рядом с радио-кнопками */
+input[type="radio"] + label {
+    cursor: pointer; /* Изменение курсора при наведении */
+    user-select: none; /* Запрещаем выделение текста */
+    position: relative; /* Позиционирование элемента */
+    padding-left: 20px;
+}
+
+/* Стили для псевдоэлемента ::before меток */
+input[type="radio"] + label::before {
+    transition: all 250ms cubic-bezier(.4,.25,.3,1); /* Анимация перехода */
+    content: ""; /* Пустое содержимое, необходимое для псевдоэлемента */
+    width: 20px; /* Ширина круга */
+    height: 20px; /* Высота круга */
+    border-radius: 50%; /* Скругление углов для создания круга */
+    background-color: transparent; /* Цвет круга */
+    border: 1px solid black; /* Толщина и цвет рамки круга */
+    font-size: 0; /* Отключение размера шрифта */
+    position: absolute; /* Позиционирование псевдоэлемента */
+    bottom: 6px; /* Расстояние до основного текста */
+    left: 0%; /* Расположение псевдоэлемента по горизонтали */
+    transform: translate(-50%, 50%); /* Центрирование псевдоэлемента */
+}
+
+/* Стили для псевдоэлемента ::after меток */
+input[type="radio"] + label::after {
+    transition: all 250ms cubic-bezier(.4,.25,.3,1); /* Анимация перехода */
+    content: ""; /* Пустое содержимое, необходимое для псевдоэлемента */
+    width: 0; /* Начальная ширина круга, который будет анимироваться */
+    height: 0; /* Начальная высота круга, который будет анимироваться */
+    border-radius: 50%; /* Скругление углов для создания круга */
+    background-color: black; /* Цвет круга */
+    position: absolute; /* Позиционирование псевдоэлемента */
+    bottom: 6px; /* Расстояние до основного текста */
+    left: 0; /* Расположение псевдоэлемента по горизонтали */
+    transform: translate(-50%, 50%); /* Центрирование псевдоэлемента */
+}
+
+/* Стили для активированных (выбранных) радио-кнопок */
+input[type="radio"]:checked + label::before {
+    background-color: transparent; /* Прозрачный цвет для круга */
+    width: 25px; /* Увеличиваем ширину круга */
+    height: 25px; /* Увеличиваем высоту круга */
+    border-width: 1px; /* Толщина рамки круга */
+}
+
+/* Стили для активированных (выбранных) радио-кнопок (анимация) */
+input[type="radio"]:checked + label::after {
+    width: 15px; /* Увеличиваем ширину анимированного круга */
+    height: 15px; /* Увеличиваем высоту анимированного круга */
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.submit_btn {
+    font-family: 'Jeju Myeongjio', sans-serif;
+    display: inline-block;
+    width: 40%;
+    height: 50px;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    transition: all .3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    user-select: none;
+}
+
+
+.submit_btn::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255); /* Заменяем переменную на конкретное значение цвета */
+    border-radius: 20px;
+    z-index: -2;
+}
+
+.submit_btn::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #e5aafc; /* Используем darken($color, 15%) для получения темного оттенка */
+    transition: all .3s;
+    border-radius: 20px;
+    z-index: -1;
+}
+
+.submit_btn:hover {
+    color: #fff;
+}
+
+.submit_btn:hover::before {
+    width: 100%;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+/* Стили для меток, которые будут отображаться рядом с радио-кнопками */
+input[type="checkbox"] + label {
+    cursor: pointer; /* Изменение курсора при наведении */
+    user-select: none; /* Запрещаем выделение текста */
+    position: relative; /* Позиционирование элемента */
+    padding-left: 20px;
+}
+
+/* Стили для псевдоэлемента ::before меток */
+input[type="checkbox"] + label::before {
+    transition: all 250ms cubic-bezier(.4,.25,.3,1); /* Анимация перехода */
+    content: ""; /* Пустое содержимое, необходимое для псевдоэлемента */
+    width: 20px; /* Ширина круга */
+    height: 20px; /* Высота круга */
+    border-radius: 5px; /* Скругление углов для создания круга */
+    background-color: transparent; /* Цвет круга */
+    border: 1px solid black; /* Толщина и цвет рамки круга */
+    font-size: 0; /* Отключение размера шрифта */
+    position: absolute; /* Позиционирование псевдоэлемента */
+    bottom: 6px; /* Расстояние до основного текста */
+    left: 0%; /* Расположение псевдоэлемента по горизонтали */
+    transform: translate(-50%, 50%); /* Центрирование псевдоэлемента */
+}
+
+/* Стили для псевдоэлемента ::after меток */
+input[type="checkbox"] + label::after {
+    transition: all 250ms cubic-bezier(.4,.25,.3,1); /* Анимация перехода */
+    content: ""; /* Пустое содержимое, необходимое для псевдоэлемента */
+    width: 0; /* Начальная ширина круга, который будет анимироваться */
+    height: 0; /* Начальная высота круга, который будет анимироваться */
+    border-radius: 0px; /* Скругление углов для создания круга */
+    background-color: black; /* Цвет круга */
+    position: absolute; /* Позиционирование псевдоэлемента */
+    bottom: 6px; /* Расстояние до основного текста */
+    left: 0; /* Расположение псевдоэлемента по горизонтали */
+    transform: translate(-50%, 50%); /* Центрирование псевдоэлемента */
+}
+
+/* Стили для активированных (выбранных) радио-кнопок */
+input[type="checkbox"]:checked + label::before {
+    background-color: transparent; /* Прозрачный цвет для круга */
+    width: 25px; /* Увеличиваем ширину круга */
+    height: 25px; /* Увеличиваем высоту круга */
+    border-width: 1px; /* Толщина рамки круга */
+}
+
+/* Стили для активированных (выбранных) радио-кнопок (анимация) */
+input[type="checkbox"]:checked + label::after {
+    width: 13px; /* Увеличиваем ширину анимированного круга */
+    height: 13px; /* Увеличиваем высоту анимированного круга */
+}
+
+.aclcoho_item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    margin-left: 10px;
+}
+

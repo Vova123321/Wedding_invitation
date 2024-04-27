@@ -1,0 +1,18 @@
+.SixthSeciton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    width: 100%;
+}
+
+.dresscode {
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Miama Nueva';
+    padding-top: 50px;
+    padding-bottom: 50px;
+    letter-spacing: 10px;
+    line-height: 80px;
+}

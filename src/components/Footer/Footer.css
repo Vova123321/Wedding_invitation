@@ -1,0 +1,64 @@
+.footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    bottom: 0;
+}
+
+.footer_title {
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Miama Nueva';
+    padding-bottom: 50px;
+    letter-spacing: 10px;
+    line-height: 100px;
+}
+
+.husband {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.wife {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.happy {
+    font-family: 'Jeju Myeongjio',sans-serif;
+    text-align: center;
+    line-height: 160%;
+    font-size: 30px;
+    margin-top: 30px;
+    letter-spacing: 10px;
+}
+
+.name_couple {
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Miama Nueva';
+    padding-top: 50px;
+    letter-spacing: 10px;
+    line-height: 100px;
+}
+
+.siren_footer {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    transform: scale(-1,1);
+}
+
+.siren_bottom {
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+}

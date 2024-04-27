@@ -1,0 +1,43 @@
+.Main {
+    flex: 1;
+    padding-top: 40%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    overflow: hidden;
+    user-select: none;
+    position: relative;
+}
+
+.siren_toLeft {
+    position: absolute;
+    object-fit: contain;
+    opacity: 0.6;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    top: -15%;
+}
+
+.siren_toRight {
+    position: absolute;
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+    z-index: -1;
+    transform: scale(-1,1);
+}
+
+.siren_toLeft2 {
+    position: absolute;
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+    z-index: -1;
+    top: 15%;
+}

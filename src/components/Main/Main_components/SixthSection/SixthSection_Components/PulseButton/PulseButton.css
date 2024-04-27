@@ -1,0 +1,62 @@
+.dresscode_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.top_btn,.bottom_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.top_btn > button,.bottom_btn > button {
+    background-color: var(--background-color);
+    width: 100px;
+    height: 100px;
+    margin: 15px;
+    border-radius: 10px;
+    transition: 2s;
+    border: none;
+    cursor:default;
+    box-shadow: 1px 1px 10px rgb(129, 129, 129);
+}
+
+.pulse1 { --background-color: #AE94D0; --hover: #AE94D0; }
+.pulse2 { --background-color: #E1CFFE; --hover: #E1CFFE; }
+.pulse3 { --background-color: #F6D3FF; --hover: #F6D3FF; }
+.pulse4 { --background-color: #000000; --hover: #000000; }
+.pulse5 { --background-color: #FFF84E; --hover: #FFF84E; }
+.pulse6 { --background-color: #FFFB9C; --hover: #FFFB9C; }
+.pulse7 { --background-color: #FFFBD3; --hover: #FFFBD3; }
+.pulse8 { --background-color: #F5F5F5; --hover: #F5F5F5; }
+
+.pulse:hover {
+  animation: pulse 1s infinite;
+  box-shadow: 0 0 0 2em transparent;
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 var(--hover); }
+}
+
+.top_btn {
+    transform: translateX(400%);
+    opacity: 1;
+    transition: 2s;
+}
+.top_btn.show {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.bottom_btn {
+    transform: translateX(-400%);
+    transition: 2.5s;
+}
+
+.bottom_btn.show {
+    transform: translateX(0);
+}

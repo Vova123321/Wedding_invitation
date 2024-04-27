@@ -1,0 +1,84 @@
+.calendar {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.calendar__mounth {
+    font-family: 'Miama Nueva';
+    font-size: 50px;
+    margin-top: 40px;
+    transform: translateY(400%);
+    transition: transform 2s ease;
+}
+
+.calendar__mounth.show {
+    transform: translateY(0%);
+}
+
+.calendar_item {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    padding-top: 20px;
+    position: relative;
+}
+
+.date_colum,.date_colum2,.date_colum3,.date_colum4,.date_colum5,.date_colum6,.date_colum7 {
+    font-size: 30px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    transform: translateY(400%);
+}
+
+.date_colum,.date_colum3,.date_colum5,.date_colum7 {
+    transition: transform 2s ease;
+}
+
+.date_colum2,.date_colum4,.date_colum6 {
+    transition: transform 4s ease;
+}
+
+
+.date_colum.show,.date_colum2.show,.date_colum3.show,.date_colum4.show,.date_colum5.show,.date_colum6.show,.date_colum7.show {
+    transform: translateY(0%);
+}
+
+
+
+.date_colum > span,.date_colum2 > span,.date_colum3 > span,.date_colum4 > span,.date_colum5 > span,.date_colum6 > span,.date_colum7 > span {
+    padding-top: 15px;
+}
+
+.date_colum .mouth,.date_colum2 .mouth,.date_colum3 .mouth,.date_colum4 .mouth,.date_colum5 .mouth,.date_colum6 .mouth,.date_colum7 .mouth {
+    font-size: 30px;
+}
+
+.absolut {
+    position: relative;
+}
+
+.img_absolut {
+    position: absolute;
+    left: -15px;
+    top: 0px;
+    width: 60px;
+    height: auto;
+    object-fit: cover;
+    animation: scaleAnimation 2s infinite alternate;
+}
+
+@keyframes scaleAnimation {
+    0% {
+      transform: scale(0); /* Начальный размер изображения */
+    }
+    100% {
+      transform: scale(1); /* Завершение анимации - возвращаемся к изначальному размеру */
+    }
+  }

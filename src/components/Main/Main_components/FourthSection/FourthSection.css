@@ -1,0 +1,36 @@
+.FourthSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    width: 100%;
+}
+
+.programOfTheDay {
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Miama Nueva';
+    padding-bottom: 50px;
+    letter-spacing: 10px;
+    line-height: 80px;
+}
+
+.stages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.title {
+    transform: translateX(-300%);
+    opacity: 0;
+    transition: transform 2s ease;
+}
+
+.title.show {
+    transform: translateX(0%);
+    opacity: 1;
+}

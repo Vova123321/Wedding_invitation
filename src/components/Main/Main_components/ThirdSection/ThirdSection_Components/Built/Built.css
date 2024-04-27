@@ -1,0 +1,42 @@
+.place_built {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.place_built_title {
+    text-align: center;
+    line-height: 160%;
+    font-size: 30px;
+    margin-top: 30px;
+    letter-spacing: 10px;
+    line-height: 30px;
+    padding: 0 50px;
+}
+
+
+
+.title_href {
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+.place_build_title_p {
+    transition: transform 2s ease;
+    transform: translateX(-400%);
+}
+
+.place_build_title_p.show {
+    transform: translateX(0%);
+}
+
+.place_build_title_p2 {
+    transition: transform 2s ease;
+    transform: translateX(400%);
+}
+
+.place_build_title_p2.show {
+    transform: translateX(0%);
+}

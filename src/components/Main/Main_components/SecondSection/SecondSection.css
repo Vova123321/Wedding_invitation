@@ -1,0 +1,102 @@
+.SecondSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    width: 100%;
+}
+
+.main_title {
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Miama Nueva';
+    padding-bottom: 50px;
+    letter-spacing: 10px;
+    line-height: 100px;
+}
+
+.subtitle {
+    text-align: center;
+    line-height: 160%;
+    font-size: 30px;
+    margin-top: 30px;
+    letter-spacing: 10px;
+    padding: 0 50px;
+}
+
+.waitU {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 20px;
+    position: relative;
+}
+
+.waitU > img {
+    position: absolute;
+    object-fit: cover;
+    width: 600px;
+    height: auto;
+    left: 400px;
+    top: -150px;
+    z-index: -1;
+}
+
+.designerSiren {
+    object-fit: cover;
+    position: absolute;
+    width: 80%;
+    z-index: -1;
+    transform: scale(-1,1);
+    left: -20%;
+    opacity: 0.6;
+}
+
+.designerSiren2 {
+    object-fit: cover;
+    position: absolute;
+    width: 80%;
+    z-index: -1;
+    transform: scale(1,-1);
+    right: 0%;
+    top: 200%;
+    opacity: 0.6;
+}
+
+.p1 {
+    opacity: 0;
+    transform: translateX(-200%);
+    transition: opacity 1s ease, transform 1s ease;
+}
+.p2 {
+    opacity: 0;
+    transform: translateX(200%);
+    transition: opacity 2s ease, transform 2s ease;
+}
+.p3 {
+    opacity: 0;
+    transform: translateX(-200%);
+    transition: opacity 3s ease, transform 3s ease;
+}
+.p4 {
+    opacity: 0;
+    transform: translateX(200%);
+    transition: opacity 4s ease, transform 4s ease;
+}
+.p5 {
+    opacity: 0;
+    transform: translateX(-200%);
+    transition: opacity 5s ease, transform 5s ease;
+}
+.p6 {
+    opacity: 0;
+    transform: translateX(700%);
+    transition: opacity 6s ease, transform 3s ease;
+}
+
+.p1.show,.p2.show,.p3.show,.p4.show,.p5.show,.p6.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+

@@ -1,0 +1,44 @@
+.stage_item3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.top_start {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 70px;
+}
+
+.top_p3 {
+    font-size: 40px;
+    letter-spacing: 10px;
+    transform: translateX(-600%);
+    opacity: 0;
+    transition: transform 2s ease, opacity 2s ease;
+}
+
+.top_p3.show {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.top_reg3 {
+    font-size: 30px;
+    letter-spacing: 10px;
+    transform: translateX(600%);
+    opacity: 0;
+    transition: transform 2s ease, opacity 2s ease;
+}
+
+.top_reg3.show {
+    transform: translateX(0);
+    opacity: 1;
+}
+.top_start > img {
+    object-fit: cover;
+    height: auto;
+    width: 150px;
+    margin: 0px 20px;
+}

@@ -1,0 +1,27 @@
+.ThirdSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.place {
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Miama Nueva';
+    padding-bottom: 50px;
+    letter-spacing: 10px;
+    line-height: 80px;
+}
+
+.place_p {
+    transform: translateX(-400%);
+    transition: transform 2s ease;
+}
+
+.place_p.show {
+    transform: translateX(0%);
+}

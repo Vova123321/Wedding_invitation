@@ -1,0 +1,57 @@
+.place_party {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 40px;
+}
+.place_party_title {
+    text-align: center;
+    line-height: 160%;
+    font-size: 30px;
+    margin-top: 30px;
+    letter-spacing: 10px;
+    line-height: 30px;
+}
+
+.place_party_map > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+    gap: 15px;
+}
+
+.place_party_map > a:hover {
+    cursor: pointer;
+}
+
+.title_href {
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+.place_party_title_p {
+    transition: transform 2s ease;
+    transform: translateX(-400%);
+}
+
+.place_party_title_p.show {
+    transform: translateX(0%);
+}
+
+.place_party_title_p2 {
+    transition: transform 2s ease;
+    transform: translateX(400%);
+}
+
+.place_party_title_p2.show {
+    transform: translateX(0%);
+}
