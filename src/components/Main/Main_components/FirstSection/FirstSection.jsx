@@ -36,11 +36,11 @@ export default function FirstSection() {
             <div className="flower_circle">
                 <img src={flowerCircle} alt="" />
                 <div className="wife_husband">
-                    <p className={`wife_husband_p ${showRightDecorate ? 'show' : ''}`}>Владимир <br /> и <br /> Анастасия</p>
+                    <p className={`wife_husband_p ${showRightDecorate ? 'show' : ''}`}>YAEL <br /> & <br /> HARRY</p>
                 </div>
             </div>
             <div className={`date ${showRightDecorate ? 'show' : ''}`}>
-                12.04.24
+                21.O8.2024
             </div>
         </section>
     );

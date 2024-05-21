@@ -67,7 +67,7 @@ export default function Header() {
                         <img className='header__left-img' src={siren} alt="сирень" />
                     </div>
                     <div style={headerStyle}>
-                        <h1 className='header_title'>ПРИГЛАШЕНИЕ НА СВАДЬБУ</h1>
+                        <h1 className='header_title'>THE WEDDING</h1>
                     </div>
                     <div style={rightStyle}>
                         <img className='header__right-img' src={sirenRight} alt="сирень" />

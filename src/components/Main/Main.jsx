@@ -7,7 +7,7 @@ import FifthSection from './Main_components/FifthSection/FifthSection';
 import SixthSection from './Main_components/SixthSection/SixthSection';
 import SeventhSection from './Main_components/SeventhSection/SeventhSection';
 import EightSection from "./Main_components/EightSection/EightSection.jsx";
-
+import React, { useEffect } from 'react'
 import design_siren from '../../assets/img/disigner_siren.png'
 
 export default function Main() {
