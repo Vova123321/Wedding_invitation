@@ -36,7 +36,7 @@ export default function SecondSection() {
             <img className='designerSiren' src={DesignerSiren} alt="" />
             <img className='designerSiren2' src={DesignerSiren} alt="" />
             <div className="main_title">
-                <p className={`p1 ${showRightDecorate ? 'show' : ''}`}>Дорогие родные <br /> и друзья!</p>
+                <p className={`p1 ${showRightDecorate ? 'show' : ''}`}>Dear  family<br /> and friends!</p>
             </div>
             <div className="subtitle">
                 <p className={`p1 ${showRightDecorate ? 'show' : ''}`}>ПРИГЛАШАЕМ РАЗДЕЛИТЬ</p>

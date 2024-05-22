@@ -10,7 +10,7 @@ export default function FirstSection() {
         const handleScroll = () => {
             const scrollPosition = window.scrollY;
             const windowHeight = window.innerHeight;
-            const scrollThreshold = 300; // Порог прокрутки
+            const scrollThreshold = 300; 
 
             const WifeHusbandP = document.querySelector('.wife_husband_p');
 
