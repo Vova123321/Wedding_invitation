@@ -29,60 +29,66 @@ export default function Calendar() {
     return (
         <div className="calendar" >
             <div className={`calendar__mounth ${showRightDecorate ? 'show' : ''}`}>
-                <p>Июль 2024</p>
+                <p>August 2024</p>
             </div>
             <div className="calendar_item">
                 <div className={`date_colum ${showRightDecorate ? 'show' : ''}`}>
-                    <span className='mouth'>ПН</span>
+                    <span className='mouth'>S</span>
+                    <span>-</span>
+                    <span>4</span>
+                    <span>11</span>
+                    <span>18</span>
+                    <span>25</span>
+                </div>
+                <div className={`date_colum2 ${showRightDecorate ? 'show' : ''}`}>
+                    <span className='mouth'>M</span>
+                    <span>-</span>
+                    <span>5</span>
+                    <span>12</span>
+                    <span>19</span>
+                    <span>30</span>
+                </div>
+                <div className={`date_colum3 ${showRightDecorate ? 'show' : ''}`}>
+                    <span className='mouth'>T</span>
+                    <span>-</span>
+                    <span>6</span>
+                    <span>13</span>
+                    <span>20</span>
+                    <span>27</span>
+                </div>
+                <div className={`date_colum4 ${showRightDecorate ? 'show' : ''}`}>
+                    <span className='mouth'>W</span>
+                    <span>-</span>
+                    <span>7</span>
+                    <span>14</span>
+                    <span className='absolut'>21 <img className='img_absolut' src={CalendarIcon} alt="" /></span>
+                    <span>28</span>
+                </div>
+                <div className={`date_colum5 ${showRightDecorate ? 'show' : ''}`}>
+                    <span className='mouth'>T</span>
                     <span>1</span>
                     <span>8</span>
                     <span>15</span>
                     <span>22</span>
                     <span>29</span>
                 </div>
-                <div className={`date_colum2 ${showRightDecorate ? 'show' : ''}`}>
-                    <span className='mouth'>ВТ</span>
+                <div className={`date_colum6 ${showRightDecorate ? 'show' : ''}`}>
+                    <span className='mouth'>F</span>
                     <span>2</span>
                     <span>9</span>
                     <span>16</span>
                     <span>23</span>
                     <span>30</span>
+
+                   
                 </div>
-                <div className={`date_colum3 ${showRightDecorate ? 'show' : ''}`}>
-                    <span className='mouth'>СР</span>
+                <div className={`date_colum7 ${showRightDecorate ? 'show' : ''}`}>
+                    <span className='mouth'>S</span>
                     <span>3</span>
                     <span>10</span>
                     <span>17</span>
                     <span>24</span>
                     <span>31</span>
-                </div>
-                <div className={`date_colum4 ${showRightDecorate ? 'show' : ''}`}>
-                    <span className='mouth'>ЧТ</span>
-                    <span>4</span>
-                    <span>11</span>
-                    <span>18</span>
-                    <span>25</span>
-                </div>
-                <div className={`date_colum5 ${showRightDecorate ? 'show' : ''}`}>
-                    <span className='mouth'>ПТ</span>
-                    <span>5</span>
-                    <span>12</span>
-                    <span>19</span>
-                    <span>26</span>
-                </div>
-                <div className={`date_colum6 ${showRightDecorate ? 'show' : ''}`}>
-                    <span className='mouth'>СБ</span>
-                    <span>6</span>
-                    <span>13</span>
-                    <span className='absolut'>20 <img className='img_absolut' src={CalendarIcon} alt="" /></span>
-                    <span>27</span>
-                </div>
-                <div className={`date_colum7 ${showRightDecorate ? 'show' : ''}`}>
-                    <span className='mouth'>ВС</span>
-                    <span>7</span>
-                    <span>14</span>
-                    <span>21</span>
-                    <span>28</span>
                 </div>
             </div>
         </div>
