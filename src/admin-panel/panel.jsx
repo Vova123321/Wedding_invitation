@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Panel = () => {
+const Panel = () =>    {
     return (
         <div>
-            <h1>Admin-panel</h1>
+            <h1>Admin- panel</h1>
         </div>
     );
 };
